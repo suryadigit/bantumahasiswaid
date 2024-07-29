@@ -18,13 +18,18 @@
 
 .App-logo {
   font-size: 1.5em;
-  color: black;
+  font-weight: bold;
 }
-
+.App-logo .highlight{
+  color: #07a0ff;
+}
+.App-logo .highlight_second {
+  color: #ff5722;
+}
 .App-nav {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0.8%;
   padding: 0;
 }
 
@@ -76,6 +81,8 @@
 }
 
 .App-header {
+  background: linear-gradient(to bottom left, white 65%, #07a0ff 120%),
+  linear-gradient(to top right, white 65%, #07a0ff 120%);
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -86,7 +93,7 @@
   color: black;
   padding: 20px;
 }
-
+ 
 .App-header-wrapper {
   display: flex;
   align-items: center;
@@ -100,9 +107,14 @@
 }
 
 .App-header h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
-
+.App-header .highlight {
+  color: #07a0ff;
+}
+.App-header .highlight_second {
+  color: #ff5722;
+}
 .App-header p {
   font-size: 1em;
 }
@@ -137,10 +149,10 @@
 }
 
 .App-help-button {
-  padding: 10px 15px;
+  padding: 10px ;
   font-size: 1em;
   color: white;
-  background-color: #07a0ff;
+  background-color: #0c76b8;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -148,9 +160,9 @@
 }
 
 .App-help-button:hover {
-  background-color: whitesmoke;
-  border:1px solid #21a1f1;
-  color: #21a1f1;
+  background-color: #07a0ff;
+  box-shadow: 0 0 10px #0c76b8;
+  color: white;
 }
 
 .App-more-button {
@@ -166,8 +178,8 @@
 }
 
 .App-more-button:hover {
-  background-color: #07a0ff;
-  color: white;
+  background-color: white;
+  color: #07a0ff;
 }
 
 .App-content {

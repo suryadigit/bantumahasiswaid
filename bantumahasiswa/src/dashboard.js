@@ -11,7 +11,7 @@ function Dashboard() {
   return (
     <div className="App">
       <nav className="App-navbar">
-        <div className="App-logo">bantumahasiswa</div>
+        <div className="App-logo"><span className="highlight_second">Bantu</span><span className="highlight">mahasiswa</span></div>
         <button className="App-hamburger" onClick={toggleNav}>
           &#9776;
         </button>
@@ -26,7 +26,7 @@ function Dashboard() {
         <div className="App-header-wrapper">
           <img src="logo.png" alt="Landing" className="App-image" />
           <div className="App-header-text">
-            <h1>Selamat Datang di BantuMahasiswa</h1>
+            <h1>Selamat Datang di <span className="highlight_second">Bantu</span><span className="highlight">Mahasiswa</span></h1>
             <p>Platform untuk membantu mahasiswa dengan berbagai informasi dan layanan.</p>
             <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk pembuatan web/aplikasi dan makalah/tugas, dan banyak lagi.</p>
            

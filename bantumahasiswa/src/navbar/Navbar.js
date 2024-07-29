@@ -8,6 +8,24 @@ function Navbar() {
         setIsOpen(!isOpen);
     };
 
+    const closeNavbar = () => {
+        setIsOpen(false);
+    };
+
+    const handleNavClick = (event, targetId) => {
+        event.preventDefault();
+        if (targetId === 'header') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        closeNavbar();
+    };
+
+
     return (
         <nav className="App-navbar">
             <div className="App-logo">
@@ -24,16 +42,16 @@ function Navbar() {
             </button>
             <ul className={`App-nav ${isOpen ? 'open' : ''}`}>
                 <li className="nav-item">
-                    <a href="/home" className="nav-link">Home</a>
+                    <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'header')}>Beranda</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/services" className="nav-link">Layanan</a>
+                    <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'layanan')}>Layanan</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/contact" className="nav-link">Kontak</a>
+                    <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'kontak')}>Kontak</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/about" className="nav-link">Tentang Kami</a>
+                    <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'tentang/kami')}>Tentang Kami</a>
                 </li>
             </ul>
         </nav>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './dashboard.css';
-import Navbar from './navbar/Navbar.js';  
+import Navbar from './navbar/Navbar.js';
 
 function Dashboard() {
   const [isLoading, setIsLoading] = useState(false);
@@ -16,8 +16,8 @@ function Dashboard() {
 
   return (
     <div className="App">
-      <Navbar /> {}
-      <header className="App-header">
+      <Navbar />
+      <header id="header" className="App-header">
         <div className="App-header-wrapper">
           <img src="logo.png" alt="Landing" className="App-image" />
           <div className="App-header-text">
@@ -41,8 +41,16 @@ function Dashboard() {
           </div>
         </div>
       </header>
-      <section id="learn-more" className="App-content">
-        <h2>Kategori</h2>
+      <section id="layanan" className="App-content-services">
+        <h2>Layanan</h2>
+        <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
+      </section>
+      <section id="kontak" className="App-content-contact">
+        <h2>Kontak</h2>
+        <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
+      </section>
+      <section id="tentang/kami" className="App-content-about">
+        <h2>Tentang Kami</h2>
         <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
       </section>
     </div>

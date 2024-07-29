@@ -1,25 +1,18 @@
 // import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import './dashboard.css';
-// import Home from './pages/Home';
-// import Services from './pages/Services';
-// import Contact from './pages/Contact';
-// import About from './pages/About';
-// import Dashboard from '';
+// import { Routes, Route } from 'react-router-dom';
+// import Navbar from './navbar/Navbar'; // Sesuaikan dengan path yang benar
 
 // function App() {
 //     return (
-//         <Router>
-//             <div className="App">
-//                 <Dashboard />
-//                 <Switch>
-//                     <Route exact path="/" component={Home} />
-//                     <Route path="/services" component={Services} />
-//                     <Route path="/contact" component={Contact} />
-//                     <Route path="/about" component={About} />
-//                 </Switch>
-//             </div>
-//         </Router>
+//         <div className="App">
+//             <Navbar />
+//             <Routes>
+//                 <Route path="/home" element={<Home />} />
+//                 <Route path="/layanan" element={<Layanan />} />
+//                 <Route path="/kontak" element={<Kontak />} />
+//                 <Route path="/tentang-kami" element={<TentangKami />} />
+//             </Routes>
+//         </div>
 //     );
 // }
 

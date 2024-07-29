@@ -1,38 +1,142 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.373);
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-size: 1.5em;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.App-nav li {
+  margin: 0 10px;
+}
+
+.App-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.App-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for hamburger button */
+.App-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .App-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .App-nav.open {
+    display: flex;
+  }
+
+  .App-nav li {
+    margin: 10px 0;
+  }
+
+  .App-hamburger {
+    display: block;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: left;
+  color: black;
+  padding: 20px;
+}
+
+.App-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header-text {
+  margin-left: 20px;
+  max-width: 500px;
+}
+
+.App-header h1 {
+  font-size: 3em;
+}
+
+.App-header p {
+  font-size: 1.2em;
+}
+
+.App-image {
+  width: 500px;
+  height: auto;
+}
+
+.App-help-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
   color: white;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.App-help-button:hover {
+  background-color: #21a1f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-content {
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.App-content h2 {
+  font-size: 2em;
+}
+
+.App-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
 }

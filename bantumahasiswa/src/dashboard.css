@@ -9,13 +9,16 @@
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  font-family: "Nunito", sans-serif;
 }
 
 .App-logo .highlight {
+  font-family: "Nunito", sans-serif;
   color: #07a0ff;
 }
 
 .App-logo .highlight_second {
+  font-family: "Nunito", sans-serif;
   color: #ff5722;
 }
 
@@ -99,11 +102,14 @@
 }
 
 .App-header-text {
+  font-family: "Nunito", sans-serif;
   margin: 20px;
 }
 
 .App-header h1 {
-  font-size: 2.5em;
+  font-family:"Nunito",sans-serif;
+  font-size: 3em;
+  margin: 0;
 }
 
 .App-header .highlight {
@@ -148,6 +154,7 @@
 }
 
 .App-help-button {
+  font-family: "Nunito", sans-serif;
   padding: 10px;
   font-size: 1em;
   color: white;
@@ -194,6 +201,7 @@
 }
 
 .App-more-button {
+  font-family: "Nunito", sans-serif;
   margin-top: 20px;
   background-color: white;
   padding: 10px;
@@ -251,6 +259,7 @@
   line-height: 1.6;
 }
 .App-content-services {
+  font-family: "Nunito", sans-serif;
   padding-top: 45px;
   padding-left: 20px;
   max-width: 100%;
@@ -258,6 +267,7 @@
   background-color: #f4f4f4;
 }
 .App-content-contact {
+  font-family: "Nunito", sans-serif;
   padding-top: 45px;
   padding-left: 20px;
   max-width: 100%;
@@ -265,9 +275,16 @@
   background-color: #dcdcdc;
 }
 .App-content-about {
+  font-family: "Nunito", sans-serif;
   padding-top: 45px;
   padding-left: 20px;
   max-width: 100%;
   height: 800px;
   background-color: #f4f4f4;
+}
+.App-content-copyright h4{
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  max-width: 100%;
+  height: 30px;
 }

@@ -19,7 +19,7 @@ function Dashboard() {
       <Navbar />
       <header id="header" className="App-header">
         <div className="App-header-wrapper">
-          <img src="logo.png" alt="Landing" className="App-image" />
+          <img src="hi.png" alt="Landing" className="App-image" />
           <div className="App-header-text">
             <h1>Selamat Datang di <span className="highlight_second">Bantu</span><span className="highlight">Mahasiswa!</span></h1>
             <p>Platform untuk membantu mahasiswa dengan berbagai informasi dan layanan.</p>
@@ -49,6 +49,9 @@ function Dashboard() {
       </section>
       <section id="tentang/kami" className="App-content-about">
         <h2>Tentang Kami</h2>
+      </section>
+      <section id="hakcipta" className="App-content-copyright">
+        <h4>Copyright © 2024 BantuMahasiswa.</h4>
       </section>
     </div>
   );

@@ -1,88 +1,7 @@
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.App-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.373);
-  position: fixed;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.App-logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.App-logo .highlight{
-  color: #07a0ff;
-}
-.App-logo .highlight_second {
-  color: #ff5722;
-}
-.App-nav {
-  list-style: none;
-  display: flex;
-  margin: 0.8%;
-  padding: 0;
-}
-
-.App-nav li {
-  margin: 0 10px;
-}
-
-.App-nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.App-nav a:hover {
-  text-decoration: underline;
-}
-
-.App-hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2em;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .App-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .App-nav.open {
-    display: flex;
-  }
-
-  .App-nav li {
-    margin: 10px 0;
-  }
-
-  .App-hamburger {
-    display: block;
-  }
-}
+ 
 
 .App-header {
-  background: linear-gradient(to bottom left, white 65%, #07a0ff 120%),
-  linear-gradient(to top right, white 65%, #07a0ff 120%);
+  background: linear-gradient(to bottom left, white 65%, #07a0ff 120%);
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -93,7 +12,7 @@
   color: black;
   padding: 20px;
 }
- 
+
 .App-header-wrapper {
   display: flex;
   align-items: center;
@@ -103,18 +22,21 @@
 }
 
 .App-header-text {
-  margin: 20px 0;
+  margin: 20px;
 }
 
 .App-header h1 {
   font-size: 2.5em;
 }
+
 .App-header .highlight {
   color: #07a0ff;
 }
+
 .App-header .highlight_second {
   color: #ff5722;
 }
+
 .App-header p {
   font-size: 1em;
 }
@@ -147,6 +69,7 @@
     font-size: 0.9em;
   }
 }
+
 .App-help-button {
   padding: 10px;
   font-size: 1em;
@@ -191,11 +114,11 @@
 .App-help-button:hover {
   background-color: #07a0ff;
   box-shadow: 0 0 0px #24abff;
-  color: white;
 }
 
 .App-more-button {
   margin-top: 20px;
+  background-color: white;
   padding: 10px;
   font-size: 1em;
   color: #07a0ff;
@@ -209,6 +132,30 @@
 .App-more-button:hover {
   background-color: white;
   color: #07a0ff;
+}
+
+.App-image-arrow {
+  margin-left: 30px;
+  width: 55px;
+  height: 55px;
+  transform: rotate(15deg);
+}
+@media screen and (max-width:768px) {
+  .App-image-arrow {
+    margin-left: 20px;
+    width: 30px;
+    height: 40px;
+    transform: rotate(8deg);
+  }
+  
+}
+@media screen and (max-width: 868px) and (orientation: landscape) {
+  .App-image-arrow {
+    margin-left:10px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(1deg);
+  }
 }
 
 .App-content {

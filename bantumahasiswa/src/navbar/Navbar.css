@@ -1,0 +1,122 @@
+.App-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.373);
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0 );
+    backdrop-filter: blur(10px);
+}
+
+.App-logo .highlight {
+    color: #07a0ff;
+}
+
+.App-logo .highlight_second {
+    color: #ff5722;
+}
+
+.App-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+.App-nav li {
+    margin: 0 10px;
+}
+
+.App-nav a {
+    color: #07a0ff;
+    text-decoration: none;
+    font-size: 1em;
+    
+}
+
+.App-nav a:hover {
+    text-decoration: none;
+    color: #ff5722;
+}
+
+.App-nav a:active {
+    text-decoration: none;
+    color: #ff5722;
+}
+
+.App-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    z-index: 1001;
+    margin-right: 52px;
+}
+
+.App-hamburger div {
+    background: #07a0ff;
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    transition: all 0.3s ease;
+    
+}
+
+.App-hamburger div:nth-child(1) {
+    top: 0;
+    
+}
+
+.App-hamburger div:nth-child(2) {
+    top: 8px;
+}
+
+.App-hamburger div:nth-child(3) {
+    top: 16px;
+}
+
+.App-hamburger.open div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.App-hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.App-hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+@media (max-width: 768px) {
+    .App-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 40px;
+        left: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+        
+    }
+
+    .App-nav.open {
+        display: flex;
+    }
+
+    .App-nav li {
+        margin: 8px 0;
+    }
+
+    .App-hamburger {
+        display:block;
+    }
+}

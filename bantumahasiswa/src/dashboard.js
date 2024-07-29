@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import './App.css';
+import './dashboard.css';
+import Navbar from './navbar/Navbar.js';  
 
 function Dashboard() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
 
   const handleHelpClick = (event) => {
     event.preventDefault();
@@ -15,28 +11,17 @@ function Dashboard() {
     setTimeout(() => {
       const message = "Halo Admin, Saya lagi butuh bantuan nih, bisa tolong bantu saya?";
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
-    }, 500);  
+    }, 500);
   };
 
   return (
     <div className="App">
-      <nav className="App-navbar">
-        <div className="App-logo"><span className="highlight_second">Bantu</span><span className="highlight">mahasiswa</span></div>
-        <button className="App-hamburger" onClick={toggleNav}>
-          &#9776;
-        </button>
-        <ul className={`App-nav ${isNavOpen ? 'open' : ''}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#services">Layanan</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-      </nav>
+      <Navbar /> {}
       <header className="App-header">
         <div className="App-header-wrapper">
           <img src="logo.png" alt="Landing" className="App-image" />
           <div className="App-header-text">
-            <h1>Selamat Datang di <span className="highlight_second">Bantu</span><span className="highlight">Mahasiswa</span></h1>
+            <h1>Selamat Datang di <span className="highlight_second">Bantu</span><span className="highlight">Mahasiswa!</span></h1>
             <p>Platform untuk membantu mahasiswa dengan berbagai informasi dan layanan.</p>
             <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk pembuatan web/aplikasi dan makalah/tugas, dan banyak lagi.</p>
             <div>
@@ -46,9 +31,12 @@ function Dashboard() {
                 className={`App-help-button ${isLoading ? 'loading' : ''}`}
                 onClick={handleHelpClick}
               >
-                <span>Minta Bantuan</span>
+                <span>Hubungi Kami <i className="fab fa-whatsapp"></i></span>
                 <div className="spinner"></div>
               </a>
+              <span>
+                <img src="right-drawn-arrow.png" alt="Arrow" className="App-image-arrow" />
+              </span>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ function Dashboard() {
     event.preventDefault();
     setIsLoading(true);
     setTimeout(() => {
-      window.location.href = "https://wa.me/082277266175";
+      window.location.href = "https://wa.me/6282277266175";
     }, 500);  
   };
 

@@ -43,15 +43,12 @@ function Dashboard() {
       </header>
       <section id="layanan" className="App-content-services">
         <h2>Layanan</h2>
-        <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
       </section>
       <section id="kontak" className="App-content-contact">
         <h2>Kontak</h2>
-        <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
       </section>
       <section id="tentang/kami" className="App-content-about">
         <h2>Tentang Kami</h2>
-        <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
       </section>
     </div>
   );

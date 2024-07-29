@@ -152,16 +152,18 @@
   padding: 10px ;
   font-size: 1em;
   color: white;
-  background-color: #0c76b8;
+  background-color: #07a0ff;
   border: none;
+  box-shadow: 0 0 10px #0c76b8;
   border-radius: 10px;
   cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
 }
 
 .App-help-button:hover {
   background-color: #07a0ff;
-  box-shadow: 0 0 10px #0c76b8;
+  box-shadow: 0 0 0px #24abff;
   color: white;
 }
 

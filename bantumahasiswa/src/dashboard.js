@@ -32,7 +32,8 @@ function Dashboard() {
            
             <div>
               <button className="App-more-button">Selengkapnya</button>
-            <button className="App-help-button">Minta Bantuan</button>
+              <a href="https://wa.me/082277266175" className="App-help-button">Minta Bantuan</a>
+
             </div>
           </div>
         </div>

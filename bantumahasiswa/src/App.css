@@ -147,9 +147,8 @@
     font-size: 0.9em;
   }
 }
-
 .App-help-button {
-  padding: 10px ;
+  padding: 10px;
   font-size: 1em;
   color: white;
   background-color: #07a0ff;
@@ -157,8 +156,36 @@
   box-shadow: 0 0 10px #0c76b8;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
   text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.App-help-button .spinner {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-help-button.loading .spinner {
+  display: inline-block;
+}
+
+.App-help-button.loading span {
+  display: none;
 }
 
 .App-help-button:hover {

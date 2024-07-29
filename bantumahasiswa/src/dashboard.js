@@ -3,9 +3,18 @@ import './App.css';
 
 function Dashboard() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
+  };
+
+  const handleHelpClick = (event) => {
+    event.preventDefault();
+    setIsLoading(true);
+    setTimeout(() => {
+      window.location.href = "https://wa.me/082277266175";
+    }, 500);  
   };
 
   return (
@@ -29,17 +38,22 @@ function Dashboard() {
             <h1>Selamat Datang di <span className="highlight_second">Bantu</span><span className="highlight">Mahasiswa</span></h1>
             <p>Platform untuk membantu mahasiswa dengan berbagai informasi dan layanan.</p>
             <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk pembuatan web/aplikasi dan makalah/tugas, dan banyak lagi.</p>
-           
             <div>
               <button className="App-more-button">Selengkapnya</button>
-              <a href="https://wa.me/082277266175" className="App-help-button">Minta Bantuan</a>
-
+              <a
+                href="#!"
+                className={`App-help-button ${isLoading ? 'loading' : ''}`}
+                onClick={handleHelpClick}
+              >
+                <span>Minta Bantuan</span>
+                <div className="spinner"></div>
+              </a>
             </div>
           </div>
         </div>
       </header>
       <section id="learn-more" className="App-content">
-        <h2>Katergory</h2>
+        <h2>Kategori</h2>
         <p>Kami menyediakan berbagai sumber daya dan bantuan untuk mahasiswa, termasuk informasi akademik, beasiswa, dan banyak lagi.</p>
       </section>
     </div>

@@ -13,7 +13,8 @@ function Dashboard() {
     event.preventDefault();
     setIsLoading(true);
     setTimeout(() => {
-      window.location.href = "https://wa.me/6282277266175";
+      const message = "Halo Admin, Saya lagi butuh bantuan nih, bisa tolong bantu saya?";
+      window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
     }, 500);  
   };
 

@@ -6,7 +6,6 @@ import './styles/content.css';
 import './styles/services.css';
 import './styles/headers.css';
 import './styles/copyright.css';
-
 import Navbar from './navbar/Navbar.js';
 
 function Dashboard() {

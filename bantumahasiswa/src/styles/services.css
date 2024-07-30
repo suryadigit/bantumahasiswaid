@@ -1,0 +1,85 @@
+.App-content-services {
+    background: linear-gradient(to bottom right, white 65%, #07a0ff 120%);
+    font-family: "Nunito", sans-serif;
+    padding-top: 45px;
+    padding-left: 20px;
+    height: 800px;
+    background-color: #f4f4f4;
+}
+
+
+.shape {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 19px;
+    background-color: white;
+    box-shadow: rgb(218, 218, 218) 0px 0px 6px;
+    margin: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.shape img {
+    width: 215px;
+    height:200px;
+    margin-bottom: 10px;
+}
+
+.shape p {
+    margin: 0;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .App-content-services {
+        height: 800px;
+    }
+
+    .shape {
+        height: 150px;
+        width: 128px;
+        margin: 12px;
+    }
+
+    .shape img {
+        width: 90px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .App-hub-button {
+        width: 140px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+.App-hub-button {
+    font-family: "Nunito", sans-serif;
+    padding: 10px;
+    font-size: 0.77em;
+    color: white;
+    background-color: #02da14;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.App-hub-button:hover {
+    background-color: #00830b;
+    box-shadow: 0 0 0px #24abff;
+}

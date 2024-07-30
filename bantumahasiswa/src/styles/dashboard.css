@@ -45,7 +45,6 @@
 
 }
 
-
 .App-hamburger {
   display: none;
   background: none;
@@ -77,9 +76,10 @@
 
   .App-hamburger {
     display: block;
+    font-size: 1.5em;
   }
 }
-
+/*beranda*/
 .App-header {
   background: linear-gradient(to bottom left, white 65%, #07a0ff 120%);
   background-color: white;
@@ -150,6 +150,9 @@
 
   .App-header p {
     font-size: 0.9em;
+  }
+  .App-content-services{
+    width: 100%;
   }
 }
 
@@ -258,7 +261,9 @@
   font-size: 1.1em;
   line-height: 1.6;
 }
+/*layanan*/
 .App-content-services {
+  background: linear-gradient(to bottom right, white 65%, #07a0ff 120%);
   font-family: "Nunito", sans-serif;
   padding-top: 45px;
   padding-left: 20px;
@@ -266,6 +271,22 @@
   height: 800px;
   background-color: #f4f4f4;
 }
+.circle {
+  width: 230px;
+  justify-content: space-between;
+  padding: 19px;
+  align-items: center;
+  background-color: #07a0ff;
+  display: inline-block;
+  margin: 10px;
+  height: 500px;
+}
+
+
+
+
+
+/*Kontak*/
 .App-content-contact {
   font-family: "Nunito", sans-serif;
   padding-top: 45px;
@@ -274,6 +295,8 @@
   height: 800px;
   background-color: #dcdcdc;
 }
+
+/*Tentang Kami*/
 .App-content-about {
   font-family: "Nunito", sans-serif;
   padding-top: 45px;
@@ -282,6 +305,9 @@
   height: 800px;
   background-color: #f4f4f4;
 }
+
+
+
 .App-content-copyright h4{
   font-family: "Nunito", sans-serif;
   text-align: center;

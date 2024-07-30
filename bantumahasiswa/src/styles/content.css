@@ -1,0 +1,38 @@
+.App-content {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.App-content h2 {
+    font-size: 2em;
+}
+
+.App-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.App-image-arrow {
+    margin-left: 30px;
+    width: 55px;
+    height: 55px;
+    transform: rotate(15deg);
+}
+
+@media screen and (max-width:768px) {
+    .App-image-arrow {
+        margin-left: 20px;
+        width: 30px;
+        height: 40px;
+        transform: rotate(8deg);
+    }
+}
+
+@media screen and (max-width: 868px) and (orientation: landscape) {
+    .App-image-arrow {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        transform: rotate(1deg);
+    }
+}

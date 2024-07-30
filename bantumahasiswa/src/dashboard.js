@@ -1,19 +1,32 @@
 import React, { useState } from 'react';
-import './dashboard.css';
+import './styles/about.css';
+import './styles/button.css';
+import './styles/contact.css';
+import './styles/content.css';
+import './styles/services.css';
+import './styles/headers.css';
+import './styles/copyright.css';
+
 import Navbar from './navbar/Navbar.js';
 
 function Dashboard() {
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleHelpClick = (event) => {
+  const handleHelpClick = (event, serviceText) => {
     event.preventDefault();
     setIsLoading(true);
     setTimeout(() => {
-      const message = "Halo Admin, Saya lagi butuh bantuan nih, bisa tolong bantu saya?";
+      const message = `Halo Kak, Saya lagi butuh bantuan nih untuk ${serviceText}`;
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
     }, 500);
   };
 
+  const services = [
+    { imgSrc: "image_services.png", alt: "Joki Skripsi",  text: "Joki Skripsi" },
+    { imgSrc: "image_services1.png", alt: "Joki Aplikasi", text: "Joki Aplikasi" },
+    { imgSrc: "image_services2.png", alt: "Joki Landing Page", text: "Joki Landing Page" },
+    { imgSrc: "image_services3.png", alt: "Joki Tugas Kampus", text: "Joki Tugas Kampus" },
+  ];
   return (
     <div className="App">
       <Navbar />
@@ -41,9 +54,26 @@ function Dashboard() {
           </div>
         </div>
       </header>
+
       <section id="layanan" className="App-content-services">
         <h2>Layanan</h2>
+        {services.map((service, index) => (
+          <div key={index} className="shape">
+            <img src={service.imgSrc} alt={service.alt} />
+            <p>{service.text}</p>
+              <a
+                href="#!"
+                className={`App-hub-button ${isLoading ? 'loading' : ''}`}
+                onClick={(event) => handleHelpClick(event, service.text)}
+              >
+                <span>Hubungi Langsung <i className="fab fa-whatsapp"></i></span>
+                </a>
+          
+          </div>
+        ))}
       </section>
+      
+
       <section id="kontak" className="App-content-contact">
         <h2>Kontak</h2>
       </section>

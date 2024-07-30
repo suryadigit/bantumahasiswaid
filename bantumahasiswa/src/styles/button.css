@@ -1,0 +1,64 @@
+.App-help-button {
+    font-family: "Nunito", sans-serif;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #009bfc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.App-help-button .spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.App-help-button.loading .spinner {
+    display: inline-block;
+}
+
+.App-help-button.loading span {
+    display: none;
+}
+
+.App-help-button:hover {
+    background-color: #005d9b;
+    box-shadow: 0 0 0px #07a0ff;
+}
+
+.App-more-button {
+    font-family: "Nunito", sans-serif;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    font-size: 1em;
+    color: #07a0ff;
+    border: 1px solid #07a0ff;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App-more-button:hover {
+    background-color: #88d1ff;
+    color: white;
+}

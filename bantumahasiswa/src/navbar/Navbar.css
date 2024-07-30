@@ -6,8 +6,36 @@
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.373);
     position: fixed;
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
+    font-family: "Nunito", sans-serif;
+}
+.App-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .App-nav {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+}
+
+.App-nav.open {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.App-nav.close {
+    max-height: 0;
+    opacity: 0;
 }
 
 .App-logo .highlight {
@@ -18,13 +46,6 @@
     color: #ff5722;
 }
 
-.App-nav {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 10px;
-}
-
 .App-nav li {
     margin: 0 10px;
 }
@@ -33,7 +54,6 @@
     color: #07a0ff;
     text-decoration: none;
     font-size: 1em;
-
 }
 
 .App-nav a:hover {
@@ -47,24 +67,24 @@
 }
 
 .App-hamburger {
+    padding-right: 3em;
     display: none;
     background: none;
     border: none;
     cursor: pointer;
     position: relative;
-    width: 25px;
     height: 20px;
     z-index: 1001;
-    margin-right: 52px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .App-hamburger div {
     background: #07a0ff;
     height: 3px;
-    width: 25px;
+    padding-right: 22px;
     position: absolute;
     transition: all 0.3s ease;
-    margin-left: 25px;
 }
 
 .App-hamburger div:nth-child(1) {
@@ -103,26 +123,32 @@
 
 @media (max-width: 768px) {
     .App-nav {
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.9);
         position: absolute;
-        top: 40px;
+        top: 43px;
         left: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
-
     }
 
     .App-nav.open {
-        display: flex;
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .App-nav.close {
+        max-height: 0;
+        opacity: 0;
     }
 
     .App-nav li {
-        margin: 8px 0;
+        margin: 5px 10px;
     }
 
     .App-hamburger {
         display: block;
+        font-size: 1.5em;
     }
 }

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Navbar from './navbar/Navbar.js';
 import './import/allimport.js';
 
@@ -12,10 +11,10 @@ function Dashboard() {
   };
 
   const services = [
-    { imgSrc: "image_services.png", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Disc 75% OFF' },
-    { imgSrc: "image_services1.png", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Disc 25% OFF'  },
-    { imgSrc: "image_services2.png", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Disc 95% OFF' },
-    { imgSrc: "image_services3.png", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Disc 10% OFF' },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Disc 75% OFF' },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Disc 25% OFF'  },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Disc 95% OFF' },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Disc 10% OFF' },
     
   ];
   

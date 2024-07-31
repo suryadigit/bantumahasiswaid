@@ -14,7 +14,7 @@ function Dashboard() {
   const services = [
     { imgSrc: "image_services.png", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Disc 75% OFF' },
     { imgSrc: "image_services1.png", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Disc 25% OFF'  },
-    { imgSrc: "image_services2.png", alt: "Joki Landing Page", title: "Joki Landing Page", promo: 'Disc 95% OFF' },
+    { imgSrc: "image_services2.png", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Disc 95% OFF' },
     { imgSrc: "image_services3.png", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Disc 10% OFF' },
   ];
   return (
@@ -46,7 +46,12 @@ function Dashboard() {
       </header>
 
       <section id="layanan" className="App-content-services">
-        <h2>Layanan Kami</h2>
+        <h2>Layanan Joki Indonesia Termurah Harga Terjangkau</h2>
+        <p>
+          Kami menyediakan berbagai layanan untuk setiap kebutuhan anda.<br />
+          Tim kami terdiri dari profesional yang berpengalaman dalam bidang masing-masing.<br />
+          Harga yang kami tawarkan sangat kompetitif dan terjangkau untuk semua kalangan mahasiswa.
+        </p>
         {services.map((service, index) => (
           <div key={index} className="item-shape">
             <div className="promo">{service.promo}</div>

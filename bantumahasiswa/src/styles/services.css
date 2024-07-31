@@ -1,20 +1,26 @@
 .App-content-services {
-    background: linear-gradient(to bottom right, white 65%, #07a0ff 120%);
+    /* background: linear-gradient(to bottom right, white 65%, #07a0ff 120%); */
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #24abff1c;
     display: flex;
     justify-content: center;
     padding-top: 45px;
     flex-wrap: wrap;
 }
 
-.App-content-services h2 {
+.App-content-services h2{
     font-size: 2em;
     text-align: center;
     width: 100%;
 }
-
+.App-content-services p{
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 .item-shape {
     position: relative;
     display: inline-flex;
@@ -67,8 +73,9 @@
     color: #07a0ff;
     padding: 15px 25px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
+
 }
 
 
@@ -108,6 +115,7 @@
     }
     .title{
         margin-top: 50px;
+        
     }
     .App-hub-button {
         width: 55vw;

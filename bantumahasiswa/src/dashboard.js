@@ -12,10 +12,10 @@ function Dashboard() {
   };
 
   const services = [
-    { imgSrc: "image_services.png", alt: "Joki Skripsi",  text: "Joki Skripsi" },
-    { imgSrc: "image_services1.png", alt: "Joki Aplikasi", text: "Joki Aplikasi" },
-    { imgSrc: "image_services2.png", alt: "Joki Landing Page", text: "Joki Landing Page" },
-    { imgSrc: "image_services3.png", alt: "Joki Tugas Kampus", text: "Joki Tugas Kampus" },
+    { imgSrc: "image_services.png", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Disc 75% OFF' },
+    { imgSrc: "image_services1.png", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Disc 25% OFF'  },
+    { imgSrc: "image_services2.png", alt: "Joki Landing Page", title: "Joki Landing Page", promo: 'Disc 95% OFF' },
+    { imgSrc: "image_services3.png", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Disc 10% OFF' },
   ];
   return (
     <div className="App">
@@ -49,8 +49,10 @@ function Dashboard() {
         <h2>Layanan Kami</h2>
         {services.map((service, index) => (
           <div key={index} className="item-shape">
+            <div className="promo">{service.promo}</div>
+            <div className="title">{service.title}</div>
+            <hr className="divider"/>
             <img src={service.imgSrc} alt={service.alt} />
-            <p>{service.text}</p>
               <a
                 href="#!"
               className="App-hub-button" 

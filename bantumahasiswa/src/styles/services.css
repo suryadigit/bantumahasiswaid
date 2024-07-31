@@ -10,13 +10,13 @@
 }
 
 .App-content-services h2 {
-    justify-content: center;
     font-size: 2em;
     text-align: center;
     width: 100%;
 }
 
 .item-shape {
+    position: relative;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -31,27 +31,54 @@
     margin: 2vw;
     text-align: center;
     cursor: pointer;
-    border-radius: 2%;
+    border-radius: 12px;
+}
+
+.divider {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #e7e7e7;
+    margin: 20px 0;
+}
+
+.promo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(255, 195, 104, 0.637);
+    color: rgb(160, 79, 3);
+    padding: 15px 25px;
+    border-radius: 0 12px 0 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .item-shape:hover {
-    box-shadow: 0 0 1vw #02da14;
+    box-shadow: 0 0 1vw #24abff7a;
     transition: all 0.3s ease;
 }
 
+
+.title {
+    margin-top:25px;
+    right: 0px;
+    background-color: #24abff1c;
+    color: #07a0ff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
 .item-shape img {
     width: 57%;
-    height: 50%;
+    height: 30%;
     margin-bottom: 10px;
 }
 
-.item-shape p {
-    margin: 0;
-    color: #333;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    border-radius: 5px;
-}
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -69,7 +96,7 @@
     .item-shape {
         justify-content: center;
         width: 300px;
-        height:500px;
+        height: 500px;
         flex: 0 0 auto;
     }
 
@@ -89,7 +116,7 @@
 .App-hub-button {
     font-family: "Nunito", sans-serif;
     padding: 10px;
-    font-size: 0.77em;
+    font-size: 0.99em;
     color: white;
     background-color: #02da14;
     border: none;
@@ -100,7 +127,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 90%;
+    height: 20px;
+    margin-top: auto;
 
 }
 

@@ -31,8 +31,8 @@ function Dashboard() {
               <button className="App-more-button">Selengkapnya</button>
               <a
                 href="#!"
-                className="App-help-button" 
-                onClick={handleHelpClick}
+                className="App-help-button"
+                onClick={(event)=>{ handleHelpClick(event, services.message) }}
               >
                 <span>Hubungi Kami <i className="fab fa-whatsapp"></i></span>
                 <div className="spinner"></div>

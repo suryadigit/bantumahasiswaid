@@ -11,10 +11,10 @@ function Dashboard() {
   };
 
   const services = [
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Disc 75% OFF' },
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Disc 25% OFF'  },
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Disc 95% OFF' },
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Disc 10% OFF' },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Diskon 75%' },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Diskon 25%'  },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Diskon 95%' },
+    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Diskon 10%' },
     
   ];
   
@@ -23,6 +23,11 @@ function Dashboard() {
       <Navbar />
       <header id="header" className="App-header">
         <div className="App-header-wrapper">
+          <div class="oval"></div>
+          <div class="banner"></div>
+          <div class="banner-text">
+            100 siswa | 20 mentor | 10 course
+          </div>
           <img src="hi.png" alt="Landing" className="App-image" />
           <div className="App-header-text">
             <h1>Selamat Datang di <span className="highlight_second">Bantu</span><span className="highlight">Mahasiswa!</span></h1>
@@ -74,6 +79,11 @@ function Dashboard() {
 
       <section id="kontak" className="App-content-contact">
         <h2>Kontak</h2>
+        <p>
+          Kami menyediakan berbagai layanan untuk setiap kebutuhan anda.<br />
+          Tim kami terdiri dari profesional yang berpengalaman dalam bidang masing-masing.<br />
+          Harga yang kami tawarkan sangat kompetitif dan terjangkau untuk semua kalangan mahasiswa.
+        </p>
       </section>
       <section id="tentang/kami" className="App-content-about">
         <h2>Tentang Kami</h2>

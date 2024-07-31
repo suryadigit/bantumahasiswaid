@@ -9,6 +9,42 @@
     text-align: center;
     color: black;
     padding: 20px;
+    position: relative;
+}
+
+.oval {
+    position: absolute;
+    justify-content: start;
+    background: #0050b8;
+    height: 400px;
+    width: 400px;
+    left: 0;
+    top: 53px;
+    border-radius:50%;
+    z-index: 0;
+}
+.banner {
+    position: absolute;
+    justify-content: start;
+    background: #0050b8;
+    height: 160px;
+    width: 100%;
+    top: 470px;
+    border-radius: 20px;
+    z-index: 2;
+ 
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+    top: 490px;
+    padding: 20px;
+    color: white;
+    z-index: 3;
 }
 
 .App-header-wrapper {
@@ -17,6 +53,7 @@
     justify-content: center;
     flex-direction: row;
     text-align: left;
+    position: relative;
 }
 
 .App-header-text {
@@ -42,10 +79,17 @@
     font-size: 1em;
 }
 
+.App-image-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
 .App-image {
     width: 100%;
     max-width: 500px;
     height: auto;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -60,6 +104,25 @@
     .App-image {
         width: 90%;
         max-width: 300px;
+    }
+
+    .oval {
+        height: 210px;
+        width: 210px;
+        left: 42px;
+        top: 8px;
+        border-radius:50%;
+        z-index: 0;
+    }
+    .banner {
+        height: 90px;
+        top: 220px;
+        border-radius: 20px;
+        z-index: 2;
+    }
+    .banner-text {
+        font-size: 1.4em;
+        top: 230px;
     }
 
     .App-header h1 {

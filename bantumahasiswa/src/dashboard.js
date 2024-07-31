@@ -6,7 +6,7 @@ function Dashboard() {
   const handleHelpClick = (event, serviceText) => {
     event.preventDefault();
     setTimeout(() => {
-      const message = `Halo Kak, Saya lagi butuh bantuan nih${serviceText}`;
+      const message = `Halo Kak, Saya lagi butuh bantuan nih ${serviceText}`;
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
     }, 500);
   };
@@ -16,7 +16,9 @@ function Dashboard() {
     { imgSrc: "image_services1.png", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Disc 25% OFF'  },
     { imgSrc: "image_services2.png", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Disc 95% OFF' },
     { imgSrc: "image_services3.png", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Disc 10% OFF' },
+    
   ];
+  
   return (
     <div className="App">
       <Navbar />
@@ -32,7 +34,7 @@ function Dashboard() {
               <a
                 href="#!"
                 className="App-help-button" 
-                onClick={handleHelpClick}
+                onClick={(event) => handleHelpClick(event, 'sebelumnya konsultasi dulu yaa')}
               >
                 <span>Hubungi Kami <i className="fab fa-whatsapp"></i></span>
                 <div className="spinner"></div>
@@ -61,7 +63,7 @@ function Dashboard() {
               <a
                 href="#!"
               className="App-hub-button" 
-                onClick={(event) => handleHelpClick(event, service.text)}
+              onClick={(event) => handleHelpClick(event, service.title)}
               >
                 <span>Hubungi Langsung <i className="fab fa-whatsapp"></i></span>
                 </a>

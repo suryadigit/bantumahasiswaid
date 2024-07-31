@@ -61,7 +61,7 @@ function Dashboard() {
               <a
                 href="#!"
               className="App-hub-button" 
-                onClick={(event) => handleHelpClick(event, service.text)}
+                onClick={(event) => handleHelpClick(event, service.title)}
               >
                 <span>Hubungi Langsung <i className="fab fa-whatsapp"></i></span>
                 </a>

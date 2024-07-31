@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
-import './styles/about.css';
-import './styles/button.css';
-import './styles/contact.css';
-import './styles/content.css';
-import './styles/services.css';
-import './styles/headers.css';
-import './styles/copyright.css';
-import './styles/Navbar.css';
 import Navbar from './navbar/Navbar.js';
+import './import/allimport.js';
 
 function Dashboard() {
-  const [isLoading, setIsLoading] = useState(false);
-
   const handleHelpClick = (event, serviceText) => {
     event.preventDefault();
-    setIsLoading(true);
     setTimeout(() => {
       const message = `Halo Kak, Saya lagi butuh bantuan nih untuk ${serviceText}`;
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
@@ -41,7 +31,7 @@ function Dashboard() {
               <button className="App-more-button">Selengkapnya</button>
               <a
                 href="#!"
-                className={`App-help-button ${isLoading ? 'loading' : ''}`}
+                className="App-help-button" 
                 onClick={handleHelpClick}
               >
                 <span>Hubungi Kami <i className="fab fa-whatsapp"></i></span>
@@ -56,14 +46,14 @@ function Dashboard() {
       </header>
 
       <section id="layanan" className="App-content-services">
-        <h2>Layanan</h2>
+        <h2>Layanan Kami</h2>
         {services.map((service, index) => (
-          <div key={index} className="shape">
+          <div key={index} className="item-shape">
             <img src={service.imgSrc} alt={service.alt} />
             <p>{service.text}</p>
               <a
                 href="#!"
-                className={`App-hub-button ${isLoading ? 'loading' : ''}`}
+              className="App-hub-button" 
                 onClick={(event) => handleHelpClick(event, service.text)}
               >
                 <span>Hubungi Langsung <i className="fab fa-whatsapp"></i></span>

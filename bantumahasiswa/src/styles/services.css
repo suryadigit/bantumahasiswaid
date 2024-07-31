@@ -1,35 +1,51 @@
 .App-content-services {
     background: linear-gradient(to bottom right, white 65%, #07a0ff 120%);
     font-family: "Nunito", sans-serif;
-    padding-top: 45px;
-    padding-left: 20px;
-    height: 800px;
+    min-height: 100vh;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    flex-wrap: wrap;
 }
 
+.App-content-services h2 {
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
 
-.shape {
+.item-shape {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 300px;
-    padding: 19px;
+    height: 600px;
+    max-width: 900px;
+    max-height: 900px;
+    padding: 2vw;
     background-color: white;
     box-shadow: rgb(218, 218, 218) 0px 0px 6px;
-    margin: 10px;
-    border-radius: 10%;
+    margin: 2vw;
     text-align: center;
+    cursor: pointer;
+    border-radius: 2%;
 }
 
-.shape img {
-    width: 215px;
-    height:200px;
+.item-shape:hover {
+    box-shadow: 0 0 1vw #02da14;
+    transition: all 0.3s ease;
+}
+
+.item-shape img {
+    width: 57%;
+    height: 50%;
     margin-bottom: 10px;
 }
 
-.shape p {
+.item-shape p {
     margin: 0;
     color: #333;
     background: rgba(255, 255, 255, 0.8);
@@ -40,25 +56,33 @@
 /* Mobile */
 @media (max-width: 768px) {
     .App-content-services {
-        height: 800px;
+        padding: 20px;
+        overflow-x: auto;
     }
 
-    .shape {
-        height: 150px;
-        width: 128px;
-        margin: 12px;
+    .App-content-services h2 {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
     }
 
-    .shape img {
-        width: 90px;
-        height: 70px;
-        margin-bottom: 10px;
+    .item-shape {
+        justify-content: center;
+        width: 300px;
+        height:500px;
+        flex: 0 0 auto;
+    }
+
+    .item-shape img {
+        width: 30vw;
+        height: 20vw;
+        max-width: 90px;
+        margin-bottom: 1vw;
     }
 
     .App-hub-button {
-        width: 140px;
-        height: 40px;
-        margin-bottom: 10px;
+        width: 55vw;
+        height: 5vw;
     }
 }
 
@@ -76,7 +100,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 100px;
+    width: 60%;
+
 }
 
 .App-hub-button:hover {

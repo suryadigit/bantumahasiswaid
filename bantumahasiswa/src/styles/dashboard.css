@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App-navbar {
   display: flex;
   justify-content: space-between;
@@ -174,30 +179,6 @@
   min-width: 100px;
 }
 
-.App-help-button .spinner {
-  display: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-top: 3px solid white;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App-help-button.loading .spinner {
-  display: inline-block;
-}
-
-.App-help-button.loading span {
-  display: none;
-}
-
 .App-help-button:hover {
   background-color: #07a0ff;
   box-shadow: 0 0 0px #24abff;
@@ -281,10 +262,6 @@
   margin: 10px;
   height: 500px;
 }
-
-
-
-
 
 /*Kontak*/
 .App-content-contact {

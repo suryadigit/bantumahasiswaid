@@ -24,7 +24,6 @@ function Navbar() {
         closeNavbar();
     };
 
-
     return (
         <nav className="App-navbar">
             <div className="App-logo">

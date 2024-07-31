@@ -6,7 +6,7 @@ function Dashboard() {
   const handleHelpClick = (event, serviceText) => {
     event.preventDefault();
     setTimeout(() => {
-      const message = `Halo Kak, Saya lagi butuh bantuan nih untuk ${serviceText}`;
+      const message = `Halo Kak, Saya lagi butuh bantuan nih${serviceText}`;
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
     }, 500);
   };
@@ -31,8 +31,8 @@ function Dashboard() {
               <button className="App-more-button">Selengkapnya</button>
               <a
                 href="#!"
-                className="App-help-button"
-                onClick={(event)=>{ handleHelpClick(event, services.message) }}
+                className="App-help-button" 
+                onClick={handleHelpClick}
               >
                 <span>Hubungi Kami <i className="fab fa-whatsapp"></i></span>
                 <div className="spinner"></div>
@@ -61,7 +61,7 @@ function Dashboard() {
               <a
                 href="#!"
               className="App-hub-button" 
-                onClick={(event) => handleHelpClick(event, service.title)}
+                onClick={(event) => handleHelpClick(event, service.text)}
               >
                 <span>Hubungi Langsung <i className="fab fa-whatsapp"></i></span>
                 </a>

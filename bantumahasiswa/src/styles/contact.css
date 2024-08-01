@@ -7,6 +7,34 @@
     background-color: #ffff;
 }
 
+.marquee {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
+.partner-logo {
+    display: inline-block;
+    margin-right: 50px;
+    height: 100px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
 .App-content-contact h2 {
     font-size: 30px;
     font-weight: bold;

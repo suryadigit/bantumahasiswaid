@@ -1,5 +1,8 @@
-import Navbar from './navbar/Navbar.js';
-import './import/allimport.js';
+import React, { useEffect, useRef } from 'react';
+import Navbar from './navbar/Navbar.jsx';
+import Partner from './const_partner.jsx';
+import Service from './const_services.jsx';
+import './import/allimport.jsx';
 
 function Dashboard() {
   const handleHelpClick = (event, serviceText) => {
@@ -9,27 +12,28 @@ function Dashboard() {
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
     }, 500);
   };
+  const marqueeRef = useRef(null);
+  useEffect(() => {
+    const marqueeContent = marqueeRef.current.querySelector('.marquee-content');
+    const clone = marqueeContent.cloneNode(true);
+    marqueeContent.parentNode.appendChild(clone);
+  }, []);
 
-  const services = [
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Skripsi",  title: "Joki Skripsi", promo:'Diskon 75%' },
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Diskon 25%'  },
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Diskon 95%' },
-    { imgSrc: "https://via.placeholder.com/350", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Diskon 10%' },
-    
-  ];
-  
+
   return (
     <div className="App">
       <Navbar />
+
+
       <header id="header" className="App-header">
         <div className="App-header-wrapper">
-          <div class="oval"></div>
-          <div class="banner"></div>
-          <div class="banner-text">
+          <div className="oval"></div>
+          <div className="banner"></div>
+          <div className="banner-text">
             <span>100+ Project Completed</span>
-            <div class="divider"></div>
+            <div className="divider"></div>
             <span>20 Univ Berbeda </span>
-            <div class="divider"></div>
+            <div className="divider"></div>
             <span>10 Sekolah Berbeda</span>
           </div>
           <img src="hi.png" alt="Landing" className="App-image" />
@@ -41,7 +45,7 @@ function Dashboard() {
               <button className="App-more-button">Selengkapnya</button>
               <a
                 href="#!"
-                className="App-help-button" 
+                className="App-help-button"
                 onClick={(event) => handleHelpClick(event, 'sebelumnya konsultasi dulu yaa')}
               >
                 <span>Hubungi Kami <i className="fab fa-whatsapp"></i></span>
@@ -55,6 +59,7 @@ function Dashboard() {
         </div>
       </header>
 
+
       <section id="layanan" className="App-content-services">
         <h2>Layanan Joki Indonesia Termurah Harga Terjangkau</h2>
         <p>
@@ -62,24 +67,9 @@ function Dashboard() {
           Tim kami terdiri dari profesional yang berpengalaman dalam bidang masing-masing.<br />
           Harga yang kami tawarkan sangat kompetitif dan terjangkau untuk semua kalangan mahasiswa.
         </p>
-        {services.map((service, index) => (
-          <div key={index} className="item-shape">
-            <div className="promo">{service.promo}</div>
-            <div className="title">{service.title}</div>
-            <hr className="divider"/>
-            <img src={service.imgSrc} alt={service.alt} />
-              <a
-                href="#!"
-              className="App-hub-button" 
-              onClick={(event) => handleHelpClick(event, service.title)}
-              >
-                <span>Hubungi Langsung <i className="fab fa-whatsapp"></i></span>
-                </a>
-          
-          </div>
-        ))}
+        <Service handleHelpClick={handleHelpClick} />
       </section>
-      
+
 
       <section id="kontak" className="App-content-contact">
         <h2>Kontak</h2>
@@ -88,7 +78,14 @@ function Dashboard() {
           Tim kami terdiri dari profesional yang berpengalaman dalam bidang masing-masing.<br />
           Harga yang kami tawarkan sangat kompetitif dan terjangkau untuk semua kalangan mahasiswa.
         </p>
+        <div className="marquee" ref={marqueeRef}>
+          <div className="marquee-content">
+            <Partner />
+          </div>
+        </div>
       </section>
+
+
       <section id="tentang/kami" className="App-content-about">
         <h2>Tentang Kami</h2>
       </section>

@@ -26,7 +26,11 @@ function Dashboard() {
           <div class="oval"></div>
           <div class="banner"></div>
           <div class="banner-text">
-            100 siswa | 20 mentor | 10 course
+            <span>100+ Project Completed</span>
+            <div class="divider"></div>
+            <span>20 Univ Berbeda </span>
+            <div class="divider"></div>
+            <span>10 Sekolah Berbeda</span>
           </div>
           <img src="hi.png" alt="Landing" className="App-image" />
           <div className="App-header-text">

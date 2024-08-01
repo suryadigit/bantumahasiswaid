@@ -1,5 +1,5 @@
+/* Base Styles */
 .App-content-services {
-    /* background: linear-gradient(to bottom right, white 65%, #07a0ff 120%); */
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
     background-color: #24abff1c;
@@ -9,34 +9,36 @@
     flex-wrap: wrap;
 }
 
-.App-content-services h2{
+.App-content-services h2 {
     font-size: 2em;
     text-align: center;
     width: 100%;
 }
-.App-content-services p{
+
+.App-content-services p {
     font-size: 1.1em;
     text-align: center;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .item-shape {
     position: relative;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 600px;
-    max-width: 900px;
-    max-height: 900px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     padding: 2vw;
     background-color: white;
     box-shadow: rgb(218, 218, 218) 0px 0px 6px;
     margin: 2vw;
     text-align: center;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
 .divider {
@@ -64,61 +66,84 @@
     transition: all 0.3s ease;
 }
 
-
 .title {
-    margin-top:25px;
-    right: 0px;
+    margin-top: 25px;
     background-color: #24abff1c;
     color: #07a0ff;
     padding: 15px 25px;
     border-radius: 30px;
     font-size: 18px;
     font-weight: bold;
-
 }
 
-
-
 .item-shape img {
-    width: 110%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .item-shape {
+        max-width: 270px;
+    }
 
-/* Mobile */
+    .item-shape img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .item-shape {
+        max-width: 240px;
+    }
+
+    .item-shape img {
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     .App-content-services {
         padding: 20px;
         overflow-x: auto;
     }
 
-    .App-content-services h2 {
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-    }
-
     .item-shape {
-        justify-content: center;
-        width: 300px;
-        height: 500px;
-        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 
     .item-shape img {
-        width: 30vw;
-        height: 20vw;
-        max-width: 90px;
-        margin-bottom: 1vw;
+        width: 100%;
+        height: auto;
     }
-    .title{
+
+    .title {
         margin-top: 60px;
-        
     }
+
     .App-hub-button {
         width: 55vw;
         height: 5vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .item-shape {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item-shape img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        margin-top: 40px;
     }
 }
 
@@ -139,7 +164,6 @@
     width: 90%;
     height: 20px;
     margin-top: auto;
-
 }
 
 .App-hub-button:hover {

@@ -1,3 +1,4 @@
+/* Base Styles */
 .App-header {
     background: linear-gradient(to bottom left, white 65%, #07a0ff 120%);
     background-color: white;
@@ -20,9 +21,10 @@
     width: 400px;
     left: 0;
     top: 53px;
-    border-radius:50%;
+    border-radius: 50%;
     z-index: 0;
 }
+
 .banner {
     position: absolute;
     justify-content: start;
@@ -32,19 +34,33 @@
     top: 470px;
     border-radius: 20px;
     z-index: 2;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-text {
     position: absolute;
+    display: flex;
+    top: 510px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: "Nunito", sans-serif;
-    font-size: 3.5em;
-    margin: 0;
-    top: 490px;
-    padding: 20px;
+    font-size: 2.5em;
     color: white;
     z-index: 3;
+}
+
+.banner-text span {
+    margin: 0 10px;
+}
+
+.divider {
+    width: 2px;
+    height: 80px;
+    background-color: white;
+    margin: 0 55px;
 }
 
 .App-header-wrapper {
@@ -92,6 +108,37 @@
     z-index: 1;
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .App-header h1 {
+        font-size: 2.5em;
+    }
+
+    .App-header p {
+        font-size: 0.95em;
+    }
+
+    .banner-text {
+        font-size: 2em;
+        top: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .App-header h1 {
+        font-size: 2em;
+    }
+
+    .App-header p {
+        font-size: 0.9em;
+    }
+
+    .banner-text {
+        font-size: 1.8em;
+        top: 490px;
+    }
+}
+
 @media (max-width: 768px) {
     .App-header {
         padding: 20px;
@@ -111,18 +158,30 @@
         width: 210px;
         left: 42px;
         top: 8px;
-        border-radius:50%;
+        border-radius: 50%;
         z-index: 0;
     }
+
     .banner {
-        height: 90px;
+        height: 80px;
         top: 220px;
         border-radius: 20px;
         z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
     .banner-text {
-        font-size: 1.4em;
-        top: 230px;
+        font-size: 1.2em;
+        top: 235px;
+    }
+
+    .divider {
+        width: 1px;
+        height: 20px;
+        background-color: white;
+        margin: 0 10px;
     }
 
     .App-header h1 {
@@ -131,5 +190,27 @@
 
     .App-header p {
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .App-header h1 {
+        font-size: 1.2em;
+    }
+
+    .App-header p {
+        font-size: 0.8em;
+    }
+
+    .banner-text {
+        font-size: 1em;
+        top: 240px;
+    }
+
+    .oval {
+        height: 150px;
+        width: 150px;
+        left: 25px;
+        top: 5px;
     }
 }

@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import Navbar from './navbar/Navbar.jsx';
 import Partner from './const_partner.jsx';
 import Service from './const_services.jsx';
+import Testimonials from './const_testimonials.jsx';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
 import './import/allimport.jsx';
 
 function Dashboard() {
@@ -72,19 +75,20 @@ function Dashboard() {
 
 
       <section id="kontak" className="App-content-contact">
-        <h2>Kontak</h2>
+        <h2>Kami Dipercaya oleh:</h2>
         <p>
-          Kami menyediakan berbagai layanan untuk setiap kebutuhan anda.<br />
-          Tim kami terdiri dari profesional yang berpengalaman dalam bidang masing-masing.<br />
-          Harga yang kami tawarkan sangat kompetitif dan terjangkau untuk semua kalangan mahasiswa.
+          Dengan lebih dari 2 tahun pengalaman, kami telah bekerja sama dengan berbagai mitra terpercaya di berbagai industri. <br></br>
+          Kepercayaan yang diberikan kepada kami adalah bukti komitmen kami terhadap kualitas dan profesionalisme. Kami terus berinovasi dan memberikan layanan terbaik untuk memenuhi kebutuhan dan harapan para mitra kami.
         </p>
         <div className="marquee" ref={marqueeRef}>
           <div className="marquee-content">
             <Partner />
-          </div>
+            </div>
         </div>
+        <br></br>
+        <h2>Testimoni dari para pelanggan kami</h2>
+        <Testimonials/>
       </section>
-
 
       <section id="tentang/kami" className="App-content-about">
         <h2>Tentang Kami</h2>

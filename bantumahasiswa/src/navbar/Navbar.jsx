@@ -46,7 +46,7 @@ function Navbar() {
                     <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'layanan')}>Layanan</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'kontak')}>Kontak</a>
+                    <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'kontak')}>Bekerja Sama</a>
                 </li>
                 <li className="nav-item">
                     <a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'tentang/kami')}>Tentang Kami</a>

@@ -5,7 +5,7 @@ import Service from './const_services.jsx';
 import Testimonials from './const_testimonials.jsx';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import './import/allimport.jsx';
+import './import/import.jsx';
 
 function Dashboard() {
   const handleHelpClick = (event, serviceText) => {

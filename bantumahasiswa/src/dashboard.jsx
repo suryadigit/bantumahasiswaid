@@ -31,11 +31,11 @@ function Dashboard() {
           <div className="oval"></div>
           <div className="banner"></div>
           <div className="banner-text">
-            <span>100+ Project Completed</span>
+            <span>10+ Project Completed</span>
             <div className="divider"></div>
-            <span>20 Univ Berbeda</span>
+            <span>2 Univ Berbeda</span>
             <div className="divider"></div>
-            <span>10 Sekolah Berbeda</span>
+            <span>3 Sekolah Berbeda</span>
           </div>
           <img src="hi.png" alt="Landing" className="App-image" />
           <div className="App-header-text">
@@ -69,7 +69,6 @@ function Dashboard() {
         </p>
         <Service handleHelpClick={handleHelpClick} />
       </section>
-
       <section id="kontak" className="App-content-contact">
         <h2>Kami Dipercaya oleh:</h2>
         <p>

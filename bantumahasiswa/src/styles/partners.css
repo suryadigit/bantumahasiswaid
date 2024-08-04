@@ -52,4 +52,8 @@
     justify-content: center;
 }
 
- 
+@media (max-width: 768px) {
+    .App-content-contact {
+        height: 100%;
+    }
+}

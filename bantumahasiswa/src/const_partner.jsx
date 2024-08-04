@@ -1,19 +1,20 @@
 import React from 'react';
 
 function Partner() {
+    
     const partners = [
-        { imgSrc: "favicon.ico", alt: "Partner 1" },
-        { imgSrc: "wss.png", alt: "Partner 2" },
-        { imgSrc: "favicon.ico", alt: "Partner 3" },
-        { imgSrc: "wss.png", alt: "Partner 4" },
-        { imgSrc: "favicon.ico", alt: "Partner 5" },
-        { imgSrc: "wss.png", alt: "Partner 6" },
-        { imgSrc: "favicon.ico", alt: "Partner 7" },
-        { imgSrc: "wss.png", alt: "Partner 8" },
-        { imgSrc: "favicon.ico", alt: "Partner 9" },
-        { imgSrc: "wss.png", alt: "Partner 13" },
-        { imgSrc: "favicon.ico", alt: "Partner 14" },
-        { imgSrc: "wss.png", alt: "Partner 15" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 1" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 2" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 3" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 4" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 5" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 6" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 7" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 8" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 9" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 13" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 14" },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Partner 15" },
     ];
 
     return (

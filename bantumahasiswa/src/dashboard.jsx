@@ -3,7 +3,6 @@ import Navbar from './navbar/Navbar.jsx';
 import Partner from './const_partner.jsx';
 import Service from './const_services.jsx';
 import Testimonials from './const_testimonials.jsx';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import './import/import.jsx';
 

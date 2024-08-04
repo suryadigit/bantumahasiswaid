@@ -40,7 +40,8 @@
     }
 
     .testimonial {
-        margin: 8px;
+        margin-left: 0px;
+        margin-right: 10px;
         width: 230px;
     }
 }

@@ -15,19 +15,18 @@ function Dashboard() {
       window.location.href = `https://wa.me/6282277266175?text=${encodeURIComponent(message)}`;
     }, 500);
   };
+
   const marqueeRef = useRef(null);
+
   useEffect(() => {
     const marqueeContent = marqueeRef.current.querySelector('.marquee-content');
     const clone = marqueeContent.cloneNode(true);
     marqueeContent.parentNode.appendChild(clone);
   }, []);
 
-
   return (
     <div className="App">
       <Navbar />
-
-
       <header id="header" className="App-header">
         <div className="App-header-wrapper">
           <div className="oval"></div>
@@ -35,7 +34,7 @@ function Dashboard() {
           <div className="banner-text">
             <span>100+ Project Completed</span>
             <div className="divider"></div>
-            <span>20 Univ Berbeda </span>
+            <span>20 Univ Berbeda</span>
             <div className="divider"></div>
             <span>10 Sekolah Berbeda</span>
           </div>
@@ -62,7 +61,6 @@ function Dashboard() {
         </div>
       </header>
 
-
       <section id="layanan" className="App-content-services">
         <h2>Layanan Joki Indonesia Termurah Harga Terjangkau</h2>
         <p>
@@ -73,26 +71,26 @@ function Dashboard() {
         <Service handleHelpClick={handleHelpClick} />
       </section>
 
-
       <section id="kontak" className="App-content-contact">
         <h2>Kami Dipercaya oleh:</h2>
         <p>
-          Dengan lebih dari 2 tahun pengalaman, kami telah bekerja sama dengan berbagai mitra terpercaya di berbagai industri. <br></br>
+          Dengan lebih dari 2 tahun pengalaman, kami telah bekerja sama dengan berbagai mitra terpercaya di berbagai industri. <br />
           Kepercayaan yang diberikan kepada kami adalah bukti komitmen kami terhadap kualitas dan profesionalisme. Kami terus berinovasi dan memberikan layanan terbaik untuk memenuhi kebutuhan dan harapan para mitra kami.
         </p>
         <div className="marquee" ref={marqueeRef}>
           <div className="marquee-content">
             <Partner />
-            </div>
+          </div>
         </div>
-        <br></br>
+        <br />
         <h2>Testimoni dari para pelanggan kami</h2>
-        <Testimonials/>
+        <Testimonials />
       </section>
 
       <section id="tentang/kami" className="App-content-about">
         <h2>Tentang Kami</h2>
       </section>
+
       <section id="hakcipta" className="App-content-copyright">
         <h4>Copyright © 2024 BantuMahasiswa.</h4>
       </section>

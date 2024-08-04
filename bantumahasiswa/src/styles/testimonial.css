@@ -1,0 +1,127 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.App-content-services,
+.App-content-contact,
+.App-content-about {
+    padding: 20px;
+    text-align: center;
+}
+
+.App-header-wrapper {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.App-header-text h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.App-header-text p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.App-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.App-more-button,
+.App-help-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App-more-button {
+    background-color: #24abff;
+    color: white;
+}
+
+.App-image-arrow {
+    margin-left: 10px;
+    max-width: 20px;
+}
+
+.divider {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #e7e7e7;
+    margin: 20px 0;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* Card Styles */
+.testimonial,
+.service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 6px rgb(218, 218, 218);
+    margin: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.testimonial:hover,
+.service-card:hover {
+    box-shadow: 0 0 10px #24abff;
+}
+
+.testimonial img,
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p,
+.service-card p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.testimonial span,
+.service-card span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ 

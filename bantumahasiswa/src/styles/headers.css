@@ -1,4 +1,3 @@
-/* Base Styles */
 .App-header {
     background: linear-gradient(to bottom left, white 65%, #07a0ff 120%);
     background-color: white;
@@ -47,7 +46,7 @@
     justify-content: center;
     text-align: center;
     font-family: "Nunito", sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     color: white;
     z-index: 3;
 }

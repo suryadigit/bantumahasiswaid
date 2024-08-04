@@ -73,7 +73,7 @@ function Dashboard() {
         <h2>Kami Dipercaya oleh:</h2>
         <p>
           Dengan lebih dari 2 tahun pengalaman, kami telah bekerja sama dengan berbagai mitra terpercaya di berbagai industri. <br />
-          Kepercayaan yang diberikan kepada kami adalah bukti komitmen kami terhadap kualitas dan profesionalisme. Kami terus berinovasi dan memberikan layanan terbaik untuk memenuhi kebutuhan dan harapan para mitra kami.
+          Kepercayaan yang diberikan kepada kami adalah bukti komitmen kami terhadap kualitas dan profesionalisme.<br/> Kami terus berinovasi dan memberikan layanan terbaik untuk memenuhi kebutuhan dan harapan para mitra kami.
         </p>
         <div className="marquee" ref={marqueeRef}>
           <div className="marquee-content">

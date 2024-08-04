@@ -1,4 +1,3 @@
-/* Base Styles */
 .App-content-services {
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
@@ -29,8 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 300px;
+    width: 350px;
     height: auto;
     padding: 2vw;
     background-color: white;
@@ -82,7 +80,6 @@
     margin-bottom: 10px;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
     .item-shape {
         max-width: 270px;

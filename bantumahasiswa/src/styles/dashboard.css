@@ -84,7 +84,7 @@
     font-size: 1.5em;
   }
 }
-/*beranda*/
+
 .App-header {
   background: linear-gradient(to bottom left, white 65%, #07a0ff 120%);
   background-color: white;
@@ -242,7 +242,7 @@
   font-size: 1.1em;
   line-height: 1.6;
 }
-/*layanan*/
+
 .App-content-services {
   background: linear-gradient(to bottom right, white 65%, #07a0ff 120%);
   font-family: "Nunito", sans-serif;
@@ -252,6 +252,7 @@
   height: 800px;
   background-color: #f4f4f4;
 }
+
 .circle {
   width: 230px;
   justify-content: space-between;
@@ -263,7 +264,6 @@
   height: 500px;
 }
 
-/*Kontak*/
 .App-content-contact {
   font-family: "Nunito", sans-serif;
   padding-top: 45px;
@@ -273,7 +273,6 @@
   background-color: #dcdcdc;
 }
 
-/*Tentang Kami*/
 .App-content-about {
   font-family: "Nunito", sans-serif;
   padding-top: 45px;

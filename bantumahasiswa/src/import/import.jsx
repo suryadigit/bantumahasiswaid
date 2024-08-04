@@ -6,3 +6,4 @@ import '../styles/services.css';
 import '../styles/headers.css';
 import '../styles/copyright.css';
 import '../styles/Navbar.css';
+import '../styles/testimonial.css';

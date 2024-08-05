@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Navbar from './navbar/Navbar.jsx';
 import Partner from './const_partner.jsx';
 import Service from './const_services.jsx';
+import About from './const_about.jsx';
 import Testimonials from './const_testimonials.jsx';
 import 'slick-carousel/slick/slick.css';
 import './import/import.jsx';
@@ -86,7 +87,7 @@ function Dashboard() {
       </section>
 
       <section id="tentang/kami" className="App-content-about">
-        <h2>Tentang Kami</h2>
+        <About/>
       </section>
 
       <section id="hakcipta" className="App-content-copyright">

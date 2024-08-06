@@ -4,6 +4,7 @@ import Partner from './const_partner.jsx';
 import Service from './const_services.jsx';
 import About from './const_about.jsx';
 import Testimonials from './const_testimonials.jsx';
+import Hakcipta from './const_copyright.jsx';
 import 'slick-carousel/slick/slick.css';
 import './import/import.jsx';
 
@@ -91,7 +92,7 @@ function Dashboard() {
       </section>
 
       <section id="hakcipta" className="App-content-copyright">
-        <h4>Copyright © 2024 BantuMahasiswa.</h4>
+        <Hakcipta/>
       </section>
     </div>
   );

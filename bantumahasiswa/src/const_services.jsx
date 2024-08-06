@@ -2,9 +2,9 @@ import React from "react";
 
 function Service({ handleHelpClick }) {
     const services = [
-        { imgSrc: "https://via.placeholder.com/350", alt: "Joki Skripsi", title: "Joki Skripsi", promo: 'Diskon 75%' },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Joki Skripsi", title: "Joki Skripsi", promo: 'Diskon 15%' },
         { imgSrc: "https://via.placeholder.com/350", alt: "Joki Aplikasi", title: "Joki Aplikasi", promo: 'Diskon 25%' },
-        { imgSrc: "https://via.placeholder.com/350", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Diskon 95%' },
+        { imgSrc: "https://via.placeholder.com/350", alt: "Joki Website Landing", title: "Joki Website Landing", promo: 'Diskon 15%' },
         { imgSrc: "https://via.placeholder.com/350", alt: "Joki Tugas Kampus", title: "Joki Tugas Kampus", promo: 'Diskon 10%' },
     ];
 

@@ -4,7 +4,7 @@ import "./import/import.jsx";
 function About() {
     return (
         <div className="about-container">
-            <h2>About Us</h2>
+            <h2>Tentang Kami</h2>
             <p>
                 BantuMahasiswa adalah platform yang didedikasikan untuk membantu mahasiswa dengan berbagai informasi dan layanan. Kami memahami bahwa kehidupan mahasiswa penuh dengan tantangan, dan kami hadir untuk memberikan solusi yang efektif dan terjangkau.
             </p>

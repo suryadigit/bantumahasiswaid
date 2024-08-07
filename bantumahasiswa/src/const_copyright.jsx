@@ -1,20 +1,30 @@
 import React from "react";
 import "./import/import.jsx";
 
+const handleNavClick = (event, targetId) => {
+    event.preventDefault();
+    if (targetId === 'header') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+};
 function Hakcipta() {
 
     return (
         <div className="footer">
-            <div className="footer-text">
-            </div>
-            <ul>
-                <li>Home</li>
-                <li>Life@Gojek</li>
-                <li>Blogs & News</li>
-                <li>Join us</li>
+            <ul className="footer-nav">
+                <li><a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'header')}>Beranda</a></li>
+                <li><a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'layanan')}>Layanan</a></li>
+                <li><a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'header')}>Blog</a></li>
+                <li><a href="/" className="nav-link" onClick={(e) => handleNavClick(e, 'header')}>Bergabung</a></li>
             </ul>
 
-            <h3>Connect with us 👇</h3>
+
+            <h3>Sosial Media Kami</h3>
             <div className="social-links">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
@@ -23,7 +33,6 @@ function Hakcipta() {
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
             <p>© 2021 BantuMahasiswa. All Rights Reserved.</p>
-            <p>Designed with ❤️ by <a href="">BantuMahasiswa</a></p>
         </div >
     )
 }
